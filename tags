@@ -1,0 +1,272 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<SID>xx	bundle/vim-rails/autoload/rails.vim	/^map <SID>xx <SID>xx$/;"	m
+Abbrev	bundle/vim-rails/autoload/rails.vim	/^function! s:Abbrev(bang,...) abort$/;"	f
+AddBracketExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddBracketExpand(abbr,expn)$/;"	f
+AddColonExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddColonExpand(abbr,expn)$/;"	f
+AddParenExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddParenExpand(abbr,expn,...)$/;"	f
+AddSelectiveExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddSelectiveExpand(abbr,pat,expn,...)$/;"	f
+AddTabExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddTabExpand(abbr,expn)$/;"	f
+Alternate	bundle/vim-rails/autoload/rails.vim	/^function! s:Alternate(cmd,line1,line2,count,...)$/;"	f
+BufAbbreviations	bundle/vim-rails/autoload/rails.vim	/^function! s:BufAbbreviations()$/;"	f
+BufCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufCommands()$/;"	f
+BufDatabase	bundle/vim-rails/autoload/rails.vim	/^function! s:BufDatabase(...)$/;"	f
+BufFinderCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufFinderCommands()$/;"	f
+BufInitStatusline	bundle/vim-rails/autoload/rails.vim	/^function! s:BufInitStatusline()$/;"	f
+BufMappings	bundle/vim-rails/autoload/rails.vim	/^function! s:BufMappings()$/;"	f
+BufModelines	bundle/vim-rails/autoload/rails.vim	/^function! s:BufModelines()$/;"	f
+BufNavCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufNavCommands()$/;"	f
+BufScriptWrappers	bundle/vim-rails/autoload/rails.vim	/^function! s:BufScriptWrappers()$/;"	f
+BufSettings	bundle/vim-rails/autoload/rails.vim	/^function! s:BufSettings()$/;"	f
+BufSyntax	bundle/vim-rails/autoload/rails.vim	/^function! s:BufSyntax()$/;"	f
+CommandEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:CommandEdit(cmd,name,prefix,suffix,filter,default,...)$/;"	f
+CommandList	bundle/vim-rails/autoload/rails.vim	/^function! s:CommandList(A,L,P)$/;"	f
+Complete_cd	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_cd(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_console	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_console(A,L,P)$/;"	f
+Complete_destroy	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_destroy(A,L,P)$/;"	f
+Complete_edit	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_edit(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_environments	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_environments(...)$/;"	f
+Complete_find	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_find(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_generate	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_generate(A,L,P)$/;"	f
+Complete_preview	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_preview(A,L,P)$/;"	f
+Complete_rake	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_rake(A,L,P)$/;"	f
+Complete_related	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_related(A,L,P)$/;"	f
+Complete_ruby	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_ruby(A,L,P)$/;"	f
+Complete_script	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_script(ArgLead,CmdLine,P)$/;"	f
+Complete_server	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_server(A,L,P)$/;"	f
+Complete_set	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_set(A,L,P)$/;"	f
+CustomComplete	bundle/vim-rails/autoload/rails.vim	/^function! s:CustomComplete(A,L,P,cmd)$/;"	f
+Doc	bundle/vim-rails/autoload/rails.vim	/^function! s:Doc(bang, string)$/;"	f
+Edit	bundle/vim-rails/autoload/rails.vim	/^function! s:Edit(count,cmd,...)$/;"	f
+EditSimpleRb	bundle/vim-rails/autoload/rails.vim	/^function! s:EditSimpleRb(cmd,name,target,prefix,suffix,...)$/;"	f
+Extract	bundle/vim-rails/autoload/rails.vim	/^function! s:Extract(bang,...) range abort$/;"	f
+Find	bundle/vim-rails/autoload/rails.vim	/^function! s:Find(count,cmd,...)$/;"	f
+HiDefaults	bundle/vim-rails/autoload/rails.vim	/^function! s:HiDefaults()$/;"	f
+InitStatusline	bundle/vim-rails/autoload/rails.vim	/^function! s:InitStatusline()$/;"	f
+InjectIntoStatusline	bundle/vim-rails/autoload/rails.vim	/^function! s:InjectIntoStatusline(status)$/;"	f
+Invert	bundle/vim-rails/autoload/rails.vim	/^function! s:Invert(bang)$/;"	f
+LocalModelines	bundle/vim-rails/autoload/rails.vim	/^function! s:LocalModelines(lnum)$/;"	f
+Log	bundle/vim-rails/autoload/rails.vim	/^function! s:Log(bang,arg)$/;"	f
+Navcommand	bundle/vim-rails/autoload/rails.vim	/^function! s:Navcommand(bang,...)$/;"	f
+Preview	bundle/vim-rails/autoload/rails.vim	/^function! s:Preview(bang,lnum,arg)$/;"	f
+RailsBufInit	bundle/vim-rails/autoload/rails.vim	/^function! RailsBufInit(path)$/;"	f
+RailsFile	bundle/vim-rails/autoload/rails.vim	/^function! RailsFile()$/;"	f
+RailsFilePath	bundle/vim-rails/autoload/rails.vim	/^function! RailsFilePath()$/;"	f
+RailsFileType	bundle/vim-rails/autoload/rails.vim	/^function! RailsFileType()$/;"	f
+RailsFind	bundle/vim-rails/autoload/rails.vim	/^function! s:RailsFind()$/;"	f
+RailsHelpCommand	bundle/vim-rails/autoload/rails.vim	/^function! RailsHelpCommand(...)$/;"	f
+RailsIncludeexpr	bundle/vim-rails/autoload/rails.vim	/^function! RailsIncludeexpr()$/;"	f
+RailsIncludefind	bundle/vim-rails/autoload/rails.vim	/^function! s:RailsIncludefind(str,...)$/;"	f
+RailsNamedRoutes	bundle/vim-rails/autoload/rails.vim	/^function! RailsNamedRoutes()$/;"	f
+RailsRevision	bundle/vim-rails/autoload/rails.vim	/^function! RailsRevision()$/;"	f
+RailsRoot	bundle/vim-rails/autoload/rails.vim	/^function! RailsRoot()$/;"	f
+Rake	bundle/vim-rails/autoload/rails.vim	/^function! s:Rake(bang,lnum,arg)$/;"	f
+Refresh	bundle/vim-rails/autoload/rails.vim	/^function! s:Refresh(bang)$/;"	f
+RefreshBuffer	bundle/vim-rails/autoload/rails.vim	/^function! s:RefreshBuffer()$/;"	f
+Related	bundle/vim-rails/autoload/rails.vim	/^function! s:Related(cmd,line1,line2,count,...)$/;"	f
+Set	bundle/vim-rails/autoload/rails.vim	/^function! s:Set(bang,...)$/;"	f
+SetBasePath	bundle/vim-rails/autoload/rails.vim	/^function! s:SetBasePath()$/;"	f
+TheCWord	bundle/vim-rails/autoload/rails.vim	/^function! s:TheCWord()$/;"	f
+add_methods	bundle/vim-rails/autoload/rails.vim	/^function! s:add_methods(namespace, method_names)$/;"	f
+addfilecmds	bundle/vim-rails/autoload/rails.vim	/^function! s:addfilecmds(type)$/;"	f
+addtostatus	bundle/vim-rails/autoload/rails.vim	/^function! s:addtostatus(letter,status)$/;"	f
+app_background_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_background_script_command(cmd) dict abort$/;"	f
+app_dbext_settings	bundle/vim-rails/autoload/rails.vim	/^function! s:app_dbext_settings(environment) dict$/;"	f
+app_default_locale	bundle/vim-rails/autoload/rails.vim	/^function! s:app_default_locale() dict abort$/;"	f
+app_destroy_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_destroy_command(bang,...) dict$/;"	f
+app_environments	bundle/vim-rails/autoload/rails.vim	/^function! s:app_environments() dict$/;"	f
+app_eval	bundle/vim-rails/autoload/rails.vim	/^function! s:app_eval(ruby,...) dict abort$/;"	f
+app_execute_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_execute_script_command(cmd) dict abort$/;"	f
+app_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_file(name)$/;"	f
+app_find_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_find_file(name, ...) dict abort$/;"	f
+app_generate_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_generate_command(bang,...) dict$/;"	f
+app_generators	bundle/vim-rails/autoload/rails.vim	/^function! s:app_generators() dict$/;"	f
+app_has	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has(feature) dict$/;"	f
+app_has_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has_file(file) dict$/;"	f
+app_lightweight_ruby_eval	bundle/vim-rails/autoload/rails.vim	/^function! s:app_lightweight_ruby_eval(ruby,...) dict abort$/;"	f
+app_migration	bundle/vim-rails/autoload/rails.vim	/^function! s:app_migration(file) dict$/;"	f
+app_named_route_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_named_route_file(route) dict$/;"	f
+app_path	bundle/vim-rails/autoload/rails.vim	/^function! s:app_path(...) dict$/;"	f
+app_rake_tasks	bundle/vim-rails/autoload/rails.vim	/^function! s:app_rake_tasks() dict$/;"	f
+app_relglob	bundle/vim-rails/autoload/rails.vim	/^function! s:app_relglob(path,glob,...) dict$/;"	f
+app_route_names	bundle/vim-rails/autoload/rails.vim	/^function! s:app_route_names() dict$/;"	f
+app_ruby_shell_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_ruby_shell_command(cmd) dict abort$/;"	f
+app_runner_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_runner_command(count,args) dict$/;"	f
+app_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_script_command(bang,...) dict$/;"	f
+app_script_shell_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_script_shell_command(cmd) dict abort$/;"	f
+app_server_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_server_command(bang,arg) dict$/;"	f
+app_source_callback	bundle/vim-rails/autoload/rails.vim	/^function! s:app_source_callback(file) dict$/;"	f
+app_tags_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_tags_command() dict$/;"	f
+app_test_suites	bundle/vim-rails/autoload/rails.vim	/^function! s:app_test_suites() dict$/;"	f
+app_user_assertions	bundle/vim-rails/autoload/rails.vim	/^function! s:app_user_assertions() dict$/;"	f
+app_user_classes	bundle/vim-rails/autoload/rails.vim	/^function! s:app_user_classes() dict$/;"	f
+autocamelize	bundle/vim-rails/autoload/rails.vim	/^function! s:autocamelize(files,test)$/;"	f
+buffer_app	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_app() dict abort$/;"	f
+buffer_getline	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_getline(...) dict abort$/;"	f
+buffer_getvar	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_getvar(varname) dict abort$/;"	f
+buffer_lines	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_lines() dict abort$/;"	f
+buffer_name	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_name() dict abort$/;"	f
+buffer_number	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_number() dict abort$/;"	f
+buffer_path	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_path() dict abort$/;"	f
+buffer_setvar	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_setvar(varname, val) dict abort$/;"	f
+buffer_type_name	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_type_name(...) dict abort$/;"	f
+cache_clear	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_clear(...) dict$/;"	f
+cache_get	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_get(...) dict$/;"	f
+cache_has	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_has(key) dict$/;"	f
+cache_needs	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_needs(key) dict$/;"	f
+cache_set	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_set(key,value) dict$/;"	f
+compact	bundle/vim-rails/autoload/rails.vim	/^function! s:compact(ary)$/;"	f
+completion_filter	bundle/vim-rails/autoload/rails.vim	/^function! s:completion_filter(results,A)$/;"	f
+controller	bundle/vim-rails/autoload/rails.vim	/^function! s:controller(...)$/;"	f
+controllerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:controllerEdit(cmd,...)$/;"	f
+controllerList	bundle/vim-rails/autoload/rails.vim	/^function! s:controllerList(A,L,P)$/;"	f
+debug	bundle/vim-rails/autoload/rails.vim	/^function! s:debug(str)$/;"	f
+djump	bundle/vim-rails/autoload/rails.vim	/^function! s:djump(def)$/;"	f
+edit	bundle/vim-rails/autoload/rails.vim	/^function! s:edit(cmd,file,...)$/;"	f
+editcmdfor	bundle/vim-rails/autoload/rails.vim	/^function! s:editcmdfor(cmd)$/;"	f
+endof	bundle/vim-rails/autoload/rails.vim	/^function! s:endof(lnum)$/;"	f
+environment	bundle/vim-rails/autoload/rails.vim	/^function! s:environment()$/;"	f
+environmentEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:environmentEdit(cmd,...)$/;"	f
+environmentList	bundle/vim-rails/autoload/rails.vim	/^function! s:environmentList(A,L,P)$/;"	f
+error	bundle/vim-rails/autoload/rails.vim	/^function! s:error(str)$/;"	f
+escarg	bundle/vim-rails/autoload/rails.vim	/^function! s:escarg(p)$/;"	f
+esccmd	bundle/vim-rails/autoload/rails.vim	/^function! s:esccmd(p)$/;"	f
+extractdbvar	bundle/vim-rails/autoload/rails.vim	/^function! s:extractdbvar(str,arg)$/;"	f
+file_getline	bundle/vim-rails/autoload/rails.vim	/^function! s:file_getline(lnum,...) dict abort$/;"	f
+file_lines	bundle/vim-rails/autoload/rails.vim	/^function! s:file_lines() dict abort$/;"	f
+file_name	bundle/vim-rails/autoload/rails.vim	/^function! s:file_name() dict abort$/;"	f
+file_path	bundle/vim-rails/autoload/rails.vim	/^function! s:file_path() dict abort$/;"	f
+findamethod	bundle/vim-rails/autoload/rails.vim	/^function! s:findamethod(func,repl)$/;"	f
+findasymbol	bundle/vim-rails/autoload/rails.vim	/^function! s:findasymbol(sym,repl)$/;"	f
+findcmdfor	bundle/vim-rails/autoload/rails.vim	/^function! s:findcmdfor(cmd)$/;"	f
+findedit	bundle/vim-rails/autoload/rails.vim	/^function! s:findedit(cmd,files,...) abort$/;"	f
+findfromview	bundle/vim-rails/autoload/rails.vim	/^function! s:findfromview(func,repl)$/;"	f
+findit	bundle/vim-rails/autoload/rails.vim	/^function! s:findit(pat,repl)$/;"	f
+findlayout	bundle/vim-rails/autoload/rails.vim	/^function! s:findlayout(name)$/;"	f
+findview	bundle/vim-rails/autoload/rails.vim	/^function! s:findview(name)$/;"	f
+fixturesEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:fixturesEdit(cmd,...)$/;"	f
+fixturesList	bundle/vim-rails/autoload/rails.vim	/^function! s:fixturesList(A,L,P)$/;"	f
+format	bundle/vim-rails/autoload/rails.vim	/^function! s:format(...)$/;"	f
+function	bundle/vim-rails/autoload/rails.vim	/^function! s:function(name)$/;"	f
+functionaltestEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:functionaltestEdit(cmd,...)$/;"	f
+functionaltestList	bundle/vim-rails/autoload/rails.vim	/^function! s:functionaltestList(A,L,P)$/;"	f
+fuzzyglob	bundle/vim-rails/autoload/rails.vim	/^function! s:fuzzyglob(arg)$/;"	f
+g:autoloaded_rails	bundle/vim-rails/autoload/rails.vim	/^let g:autoloaded_rails = '4.3'$/;"	v
+getopt	bundle/vim-rails/autoload/rails.vim	/^function! s:getopt(opt,...)$/;"	f
+getpidfor	bundle/vim-rails/autoload/rails.vim	/^function! s:getpidfor(bind,port)$/;"	f
+gsub	bundle/vim-rails/autoload/rails.vim	/^function! s:gsub(str,pat,rep)$/;"	f
+helperEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:helperEdit(cmd,...)$/;"	f
+helperList	bundle/vim-rails/autoload/rails.vim	/^function! s:helperList(A,L,P)$/;"	f
+helpermethods	bundle/vim-rails/autoload/rails.vim	/^function! s:helpermethods()$/;"	f
+initOpenURL	bundle/vim-rails/autoload/rails.vim	/^function! s:initOpenURL()$/;"	f
+initializerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:initializerEdit(cmd,...)$/;"	f
+initializerList	bundle/vim-rails/autoload/rails.vim	/^function! s:initializerList(A,L,P)$/;"	f
+integrationtestEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:integrationtestEdit(cmd,...)$/;"	f
+integrationtestList	bundle/vim-rails/autoload/rails.vim	/^function! s:integrationtestList(A,L,P)$/;"	f
+invertrange	bundle/vim-rails/autoload/rails.vim	/^function! s:invertrange(beg,end)$/;"	f
+javascriptEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:javascriptEdit(cmd,...)$/;"	f
+javascriptList	bundle/vim-rails/autoload/rails.vim	/^function! s:javascriptList(A,L,P)$/;"	f
+lastformat	bundle/vim-rails/autoload/rails.vim	/^function! s:lastformat(start)$/;"	f
+lastmethod	bundle/vim-rails/autoload/rails.vim	/^function! s:lastmethod(...)$/;"	f
+lastmethodline	bundle/vim-rails/autoload/rails.vim	/^function! s:lastmethodline(start)$/;"	f
+lastopeningline	bundle/vim-rails/autoload/rails.vim	/^function! s:lastopeningline(pattern,limit,start)$/;"	f
+layoutEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:layoutEdit(cmd,...)$/;"	f
+layoutList	bundle/vim-rails/autoload/rails.vim	/^function! s:layoutList(A,L,P)$/;"	f
+libEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:libEdit(cmd,...)$/;"	f
+libList	bundle/vim-rails/autoload/rails.vim	/^function! s:libList(A,L,P)$/;"	f
+linepeak	bundle/vim-rails/autoload/rails.vim	/^function! s:linepeak()$/;"	f
+localeEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:localeEdit(cmd,...)$/;"	f
+localeList	bundle/vim-rails/autoload/rails.vim	/^function! s:localeList(A,L,P)$/;"	f
+mailerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:mailerEdit(cmd,...)$/;"	f
+mailerList	bundle/vim-rails/autoload/rails.vim	/^function! s:mailerList(A,L,P)$/;"	f
+makewithruby	bundle/vim-rails/autoload/rails.vim	/^function! s:makewithruby(arg,bang,...)$/;"	f
+match_type	bundle/vim-rails/autoload/rails.vim	/^function! s:match_type(type,...)$/;"	f
+matchcursor	bundle/vim-rails/autoload/rails.vim	/^function! s:matchcursor(pat)$/;"	f
+metalEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:metalEdit(cmd,...)$/;"	f
+metalList	bundle/vim-rails/autoload/rails.vim	/^function! s:metalList(A,L,P)$/;"	f
+mextargs	bundle/vim-rails/autoload/rails.vim	/^function! s:mextargs(str,num)$/;"	f
+migrationEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:migrationEdit(cmd,...)$/;"	f
+migrationList	bundle/vim-rails/autoload/rails.vim	/^function! s:migrationList(A,L,P)$/;"	f
+migspc	bundle/vim-rails/autoload/rails.vim	/^function! s:migspc(line)$/;"	f
+mkeep	bundle/vim-rails/autoload/rails.vim	/^function! s:mkeep(str)$/;"	f
+model	bundle/vim-rails/autoload/rails.vim	/^function! s:model(...)$/;"	f
+modelEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:modelEdit(cmd,...)$/;"	f
+modelList	bundle/vim-rails/autoload/rails.vim	/^function! s:modelList(A,L,P)$/;"	f
+observerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:observerEdit(cmd,...)$/;"	f
+observerList	bundle/vim-rails/autoload/rails.vim	/^function! s:observerList(A,L,P)$/;"	f
+opts	bundle/vim-rails/autoload/rails.vim	/^function! s:opts()$/;"	f
+pathjoin	bundle/vim-rails/autoload/rails.vim	/^function! s:pathjoin(...) abort$/;"	f
+pathsplit	bundle/vim-rails/autoload/rails.vim	/^function! s:pathsplit(path) abort$/;"	f
+pluginEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:pluginEdit(cmd,...)$/;"	f
+pluginList	bundle/vim-rails/autoload/rails.vim	/^function! s:pluginList(A,L,P)$/;"	f
+pop_command	bundle/vim-rails/autoload/rails.vim	/^function! s:pop_command()$/;"	f
+prephelp	bundle/vim-rails/autoload/rails.vim	/^function! s:prephelp()$/;"	f
+push_chdir	bundle/vim-rails/autoload/rails.vim	/^function! s:push_chdir(...)$/;"	f
+rails#STATUSLINE	bundle/vim-rails/autoload/rails.vim	/^function! rails#STATUSLINE(...)$/;"	f
+rails#app	bundle/vim-rails/autoload/rails.vim	/^function! rails#app(...)$/;"	f
+rails#buffer	bundle/vim-rails/autoload/rails.vim	/^function! rails#buffer(...)$/;"	f
+rails#cache_clear	bundle/vim-rails/autoload/rails.vim	/^function! rails#cache_clear(...)$/;"	f
+rails#camelize	bundle/vim-rails/autoload/rails.vim	/^function! rails#camelize(str)$/;"	f
+rails#log_syntax	bundle/vim-rails/autoload/rails.vim	/^function! rails#log_syntax()$/;"	f
+rails#new_app_command	bundle/vim-rails/autoload/rails.vim	/^function! rails#new_app_command(bang,...)$/;"	f
+rails#pluralize	bundle/vim-rails/autoload/rails.vim	/^function! rails#pluralize(word)$/;"	f
+rails#singularize	bundle/vim-rails/autoload/rails.vim	/^function! rails#singularize(word)$/;"	f
+rails#statusline	bundle/vim-rails/autoload/rails.vim	/^function! rails#statusline(...)$/;"	f
+rails#underscore	bundle/vim-rails/autoload/rails.vim	/^function! rails#underscore(str)$/;"	f
+railsPluginAuto	bundle/vim-rails/autoload/rails.vim	/^augroup railsPluginAuto$/;"	a
+readable_app	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_app() dict abort$/;"	f
+readable_calculate_file_type	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_calculate_file_type() dict abort$/;"	f
+readable_controller_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_controller_name(...) dict abort$/;"	f
+readable_default_rake_task	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_default_rake_task(lnum) dict abort$/;"	f
+readable_define_pattern	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_define_pattern() dict abort$/;"	f
+readable_end_of	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_end_of(lnum) dict abort$/;"	f
+readable_last_format	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_format(start) dict abort$/;"	f
+readable_last_method	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_method(start) dict abort$/;"	f
+readable_last_method_line	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_method_line(start) dict abort$/;"	f
+readable_last_opening_line	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_opening_line(start,pattern,limit) dict abort$/;"	f
+readable_line_count	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_line_count() dict abort$/;"	f
+readable_model_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_model_name(...) dict abort$/;"	f
+readable_preview_urls	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_preview_urls(lnum) dict abort$/;"	f
+readable_related	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_related(...) dict abort$/;"	f
+readable_type_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_type_name() dict abort$/;"	f
+readfile	bundle/vim-rails/autoload/rails.vim	/^function! s:readfile(path,...)$/;"	f
+relglob	bundle/vim-rails/autoload/rails.vim	/^function! s:relglob(...)$/;"	f
+resetomnicomplete	bundle/vim-rails/autoload/rails.vim	/^function! s:resetomnicomplete()$/;"	f
+rquote	bundle/vim-rails/autoload/rails.vim	/^function! s:rquote(str)$/;"	f
+s:app_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:app_prototype = {}$/;"	v
+s:app_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:app_prototype.cache = s:cache_prototype$/;"	v
+s:apps	bundle/vim-rails/autoload/rails.vim	/^  let s:apps = {}$/;"	v
+s:buffer_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:buffer_prototype = {}$/;"	v
+s:cache_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:cache_prototype = {'dict': {}}$/;"	v
+s:cpo_save	bundle/vim-rails/autoload/rails.vim	/^let s:cpo_save = &cpo$/;"	v
+s:efm_backtrace	bundle/vim-rails/autoload/rails.vim	/^let s:efm_backtrace='%D(in\\ %f),'$/;"	v
+s:file	bundle/vim-rails/autoload/rails.vim	/^let s:file = expand('<sfile>:p')$/;"	v
+s:file_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:file_prototype = {}$/;"	v
+s:readable_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:readable_prototype = {}$/;"	v
+s:sid	bundle/vim-rails/autoload/rails.vim	/^let s:sid = s:sub(maparg("<SID>xx"),'xx$','')$/;"	v
+s:view_types	bundle/vim-rails/autoload/rails.vim	/^let s:view_types = 'rhtml,erb,rxml,builder,rjs,mab,liquid,haml,dryml,mn'$/;"	v
+scanlineforuris	bundle/vim-rails/autoload/rails.vim	/^function! s:scanlineforuris(line)$/;"	f
+scrub	bundle/vim-rails/autoload/rails.vim	/^function! s:scrub(collection,item)$/;"	f
+selectiveexpand	bundle/vim-rails/autoload/rails.vim	/^function! s:selectiveexpand(pat,good,default,...)$/;"	f
+setopt	bundle/vim-rails/autoload/rails.vim	/^function! s:setopt(opt,val)$/;"	f
+sname	bundle/vim-rails/autoload/rails.vim	/^function! s:sname()$/;"	f
+specEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:specEdit(cmd,...)$/;"	f
+specList	bundle/vim-rails/autoload/rails.vim	/^function! s:specList(A,L,P)$/;"	f
+startswith	bundle/vim-rails/autoload/rails.vim	/^function! s:startswith(string,prefix)$/;"	f
+stylesheetEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:stylesheetEdit(cmd,...)$/;"	f
+stylesheetList	bundle/vim-rails/autoload/rails.vim	/^function! s:stylesheetList(A,L,P)$/;"	f
+sub	bundle/vim-rails/autoload/rails.vim	/^function! s:sub(str,pat,rep)$/;"	f
+taskEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:taskEdit(cmd,...)$/;"	f
+taskList	bundle/vim-rails/autoload/rails.vim	/^function! s:taskList(A,L,P)$/;"	f
+try	bundle/vim-rails/autoload/rails.vim	/^function! s:try(cmd) abort$/;"	f
+uniq	bundle/vim-rails/autoload/rails.vim	/^function! s:uniq(list)$/;"	f
+unittestEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:unittestEdit(cmd,...)$/;"	f
+unittestList	bundle/vim-rails/autoload/rails.vim	/^function! s:unittestList(A,L,P)$/;"	f
+viewEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:viewEdit(cmd,...)$/;"	f
+viewList	bundle/vim-rails/autoload/rails.vim	/^function! s:viewList(A,L,P)$/;"	f
+viewspattern	bundle/vim-rails/autoload/rails.vim	/^function! s:viewspattern()$/;"	f
+warn	bundle/vim-rails/autoload/rails.vim	/^function! s:warn(str)$/;"	f

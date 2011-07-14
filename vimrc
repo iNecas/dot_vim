@@ -25,6 +25,9 @@ set smartcase
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc
 
+" CTRL-n completion
+set completeopt+=longest
+
 " Status bar
 set laststatus=2
 
@@ -138,10 +141,10 @@ set undodir=~/.vimundo
 nnoremap / /\v
 vnoremap / /\v
 
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
+" nnoremap j gj
+" nnoremap k gk
+" vnoremap j gj
+" vnoremap k gk
 
 nnoremap <leader><space> :noh<cr>
 
@@ -546,3 +549,10 @@ endfunction
 
 command! -nargs=1 Split :call MySplit("split ", "<args>")
 " }}}
+
+" GUI {{{
+ set guioptions-=r
+ set guioptions-=l
+ set guioptions-=R
+ set guioptions-=L
+" }}} 

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/inecas/MyProjects/greenland'
+let g:netrw_dirhist_2='/Users/inecas/.vim/bundle/vim-rails'
+let g:netrw_dirhist_3='/Users/inecas/MyProjects/rails-templater'
+let g:netrw_dirhist_4='/Users/inecas/MyProjects/AKS3/trunk'
