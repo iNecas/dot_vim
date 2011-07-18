@@ -31,3 +31,12 @@
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/checksyntax_vim"]
+	path = bundle/checksyntax_vim
+	url = https://github.com/tomtom/checksyntax_vim.git
+[submodule "quickfixsigns_vim"]
+	path = quickfixsigns_vim
+	url = https://github.com/tomtom/quickfixsigns_vim
+[submodule "bundle/quickfixsigns_vim"]
+	path = bundle/quickfixsigns_vim
+	url = https://github.com/tomtom/quickfixsigns_vim

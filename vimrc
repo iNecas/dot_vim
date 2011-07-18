@@ -556,3 +556,12 @@ command! -nargs=1 Split :call MySplit("split ", "<args>")
  set guioptions-=R
  set guioptions-=L
 " }}} 
+
+" Git
+map <Leader>g :r!git log --format=format:\%s HEAD^..HEAD<CR>kJ
+
+" Ruby Syntax Check
+
+if exists('g:checksyntax')
+  let g:checksyntax['ruby']['auto']=1
+endif
