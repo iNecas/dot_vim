@@ -1,3 +1,4 @@
+runtime macros/matchit.vim
 set shell=/bin/bash
 set nocompatible
 set number
@@ -379,6 +380,8 @@ autocmd FileType tex                    setlocal spelllang=en " autoindent in te
 autocmd FileType tex                    setlocal spell " autoindent in tex
 autocmd FileType tex                    highlight SpellBad NONE
 autocmd FileType tex                    highlight SpellBad gui=none guifg=Red
+autocmd FileType ruby                    setlocal spelllang=en " autoindent in tex
+autocmd FileType ruby                    setlocal spell " autoindent in tex
 set laststatus=2 " Always show status line
 " }}}
 
@@ -419,67 +422,16 @@ set autowriteall
     let g:speckyRunSpecCmd = "bundle exec rspec -r ~/.vim/ruby/specky_formatter.rb -f SpeckyFormatter"
 " }}}"
 
+" RunSpec  {{{"
 
+" Run current spec (rspec current)
+noremap <Leader>rc :RunSpec<CR>
 
-" RunSpec {{{ "
-function! RunSpec(command)
-  " TODO: handle args such as --tag focus here, or make a separate command for it
-  if a:command == ''
-    let dir = 'spec'
-  else
-    let dir = a:command
-  endif
-  cexpr system("rspec -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter " . dir)
-  cw
-endfunction
-command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
-map <leader>s :Spec<space>
+" Run all specs (rspec all)
+noremap <Leader>ra :RunSpecs<CR>
+
 " }}}"
 
-" RunSpec {{{ "
-function! RunSpec(command)
-  " TODO: handle args such as --tag focus here, or make a separate command for it
-  if a:command == ''
-    let dir = 'spec'
-  else
-    let dir = a:command
-  endif
-  cexpr system("rspec -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter " . dir)
-  cw
-endfunction
-command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
-map <leader>s :Spec<space>
-" }}}"
-
-" RunSpec {{{ "
-function! RunSpec(command)
-  " TODO: handle args such as --tag focus here, or make a separate command for it
-  if a:command == ''
-    let dir = 'spec'
-  else
-    let dir = a:command
-  endif
-  cexpr system("rspec -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter " . dir)
-  cw
-endfunction
-command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
-map <leader>s :Spec<space>
-" }}}"
-
-" RunMySpec {{{ "
-function! RunMySpec(command)
-  " TODO: handle args such as --tag focus here, or make a separate command for it
-  if a:command == ''
-    let dir = 'spec'
-  else
-    let dir = a:command
-  endif
-  cexpr system("bundle exec rspec -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter " . dir)
-  cw
-endfunction
-command! -nargs=? -complete=file Spec call RunMySpec(<q-args>)
-map <leader>s :Spec<space>
-" }}}"
 
 " CamelCase vs snake_case {{{"
 vnoremap <leader>C :s/_\([a-z]\)/\u\1/g<CR>
@@ -560,8 +512,5 @@ command! -nargs=1 Split :call MySplit("split ", "<args>")
 " Git
 map <Leader>g :r!git log --format=format:\%s HEAD^..HEAD<CR>kJ
 
-" Ruby Syntax Check
-
-if exists('g:checksyntax')
-  let g:checksyntax['ruby']['auto']=1
-endif
+" QuickfixSign
+noremap <Leader>q :QuickfixsignsSet<cr>
