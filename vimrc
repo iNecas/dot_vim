@@ -425,7 +425,7 @@ set autowriteall
 " RunSpec  {{{"
 
 " Run current spec (rspec current)
-noremap <Leader>rc :RunSpec<CR>
+" noremap <Leader>rc :RunSpec<CR>
 
 " Run all specs (rspec all)
 noremap <Leader>ra :RunSpecs<CR>
@@ -514,3 +514,26 @@ map <Leader>g :r!git log --format=format:\%s HEAD^..HEAD<CR>kJ
 
 " QuickfixSign
 noremap <Leader>q :QuickfixsignsSet<cr>
+
+" ConqueTerm experiments
+
+fu! MyConqueStartup(term)
+  stopinsert!
+endfu
+
+call conque_term#register_function("after_startup","MyConqueStartup")
+
+let g:term_commands = {}
+fu! s:RunInTerm(name, command)
+  if ! has_key(g:term_commands,a:name)
+    let term = conque_term#open("/bin/bash --init-file ~/.bash_profile", ['botright split'],1)
+    let g:term_commands[a:name] = term
+  endif
+  let term = g:term_commands[a:name]
+  call term.focus()
+  call term.write(a:command)
+endfu
+
+command! -nargs=+ Term :call s:RunInTerm(<args>)
+
+map <leader>rc :Term "test", "cucumber -r features <C-R>%\n"<cr>
