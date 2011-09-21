@@ -48,10 +48,12 @@ if has("gui_macvim")
 endif
 
 " Start without the toolbar
+set guioptions-=m
 set guioptions-=T
 
 " Default gui color scheme
-color ir_black
+" color ir_black
+colorscheme railscasts
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -204,3 +206,9 @@ call s:DefineCommand("mkdir", "Mkdir")
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
+
+" Full screen mode
+" set lines=999 columns=999
+"
+
+set guifont=Droid\ Sans\ Mono\ 10

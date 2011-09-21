@@ -44,6 +44,7 @@ let g:NERDTreeDirArrows = 1
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
+noremap <Leader>t :CommandT<CR>
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -380,8 +381,9 @@ autocmd FileType tex                    setlocal spelllang=en " autoindent in te
 autocmd FileType tex                    setlocal spell " autoindent in tex
 autocmd FileType tex                    highlight SpellBad NONE
 autocmd FileType tex                    highlight SpellBad gui=none guifg=Red
-autocmd FileType ruby                    setlocal spelllang=en " autoindent in tex
-autocmd FileType ruby                    setlocal spell " autoindent in tex
+" autocmd FileType ruby                    setlocal spelllang=en " autoindent in tex
+" autocmd FileType ruby                    setlocal spell " autoindent in tex
+" autocmd FileType ruby                    highlight SpellCap NONE
 set laststatus=2 " Always show status line
 " }}}
 
@@ -425,7 +427,7 @@ set autowriteall
 " RunSpec  {{{"
 
 " Run current spec (rspec current)
-" noremap <Leader>rc :RunSpec<CR>
+" noremap <Leader>rs :RunSpec<CR>
 
 " Run all specs (rspec all)
 noremap <Leader>ra :RunSpecs<CR>
@@ -441,6 +443,7 @@ vnoremap <leader>c :s/\([A-Z]\)/_\l\1/g<CR>
 
 " Folding {{{ "
 autocmd FileType ruby setlocal foldcolumn=1
+map <unique> <silent> <Leader>F <Plug>SimpleFold_Foldsearch
 
 " }}}"
 
@@ -486,20 +489,31 @@ noremap <Leader>rs :%s/\s*$//g<CR>:noh<CR>
 set equalalways
 
 " Split unless opened {{{
-function! MySplit( cmd, file )
-    let bufnum=bufnr(expand(a:file))
+function! MySplit( cmd, file_colon_line )
+    let file_line = split(a:file_colon_line,':')
+    let file = file_line[0]
+    if len(file_line) > 1
+      let line = file_line[1]
+    else
+      let line = ''
+    endif
+    let bufnum=bufnr(expand(l:file))
     let winnum=bufwinnr(bufnum)
     if winnum != -1
         " Jump to existing split
         exe winnum . "wincmd w"
     else
         " Make new split as usual
-        exe a:cmd . a:file
+        exe a:cmd . l:file
+    endif
+    if ! empty(l:line)
+      call setpos('.',[0, l:line, 0])
     endif
 endfunction
 
 
 command! -nargs=1 Split :call MySplit("split ", "<args>")
+noremap <Leader>f lB"zyE:Split <C-R>z<cr>
 " }}}
 
 " GUI {{{
@@ -515,13 +529,10 @@ map <Leader>g :r!git log --format=format:\%s HEAD^..HEAD<CR>kJ
 " QuickfixSign
 noremap <Leader>q :QuickfixsignsSet<cr>
 
+
 " ConqueTerm experiments
 
-fu! MyConqueStartup(term)
-  stopinsert!
-endfu
-
-call conque_term#register_function("after_startup","MyConqueStartup")
+let g:ConqueTerm_ReadUnfocused = 1
 
 let g:term_commands = {}
 fu! s:RunInTerm(name, command)
@@ -530,10 +541,27 @@ fu! s:RunInTerm(name, command)
     let g:term_commands[a:name] = term
   endif
   let term = g:term_commands[a:name]
+  let cur_win = bufwinnr("%")
   call term.focus()
+  exe "wincmd J"
+  call term.write("clear\n")
   call term.write(a:command)
+  setlocal foldmethod=expr
+  setlocal foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
+  stopinsert!
+  exe cur_win." wincmd w"
 endfu
 
 command! -nargs=+ Term :call s:RunInTerm(<args>)
 
 map <leader>rc :Term "test", "cucumber -r features <C-R>%\n"<cr>
+map <leader>rr :Term "test", "rspec --color <C-R>%:<C-R>=line('.')<cr>\n"<cr>
+map <leader>rR :Term "test", "rspec --color spec\n"<cr>
+
+
+" Use system clipboard for unnamed
+" set clipboard=unnamed
+
+" convert ruby blocks
+let g:blockle_mapping = '<Leader>rb'
+
