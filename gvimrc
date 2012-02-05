@@ -54,6 +54,7 @@ set guioptions-=T
 " Default gui color scheme
 " color ir_black
 colorscheme railscasts
+" colorscheme relaxedgreen
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -211,4 +212,5 @@ endif
 " set lines=999 columns=999
 "
 
-set guifont=Droid\ Sans\ Mono\ 10
+" set guifont=Droid\ Sans\ Mono\ 10
+set guifont=Monospace\ 10

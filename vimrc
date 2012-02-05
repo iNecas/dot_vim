@@ -44,13 +44,13 @@ let g:NERDTreeDirArrows = 1
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
-noremap <Leader>t :CommandT<CR>
+noremap <Leader>j :CommandT<CR>
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 
 " CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+map <Leader>tt :!ctags --extra=+f --exclude=build -R *<CR><CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -381,6 +381,10 @@ autocmd FileType tex                    setlocal spelllang=en " autoindent in te
 autocmd FileType tex                    setlocal spell " autoindent in tex
 autocmd FileType tex                    highlight SpellBad NONE
 autocmd FileType tex                    highlight SpellBad gui=none guifg=Red
+autocmd FileType markdown                    setlocal spelllang=en " autoindent in tex
+autocmd FileType markdown                    setlocal spell " autoindent in tex
+autocmd FileType markdown                    highlight SpellBad NONE
+autocmd FileType markdown                    highlight SpellBad gui=none guifg=Red
 " autocmd FileType ruby                    setlocal spelllang=en " autoindent in tex
 " autocmd FileType ruby                    setlocal spell " autoindent in tex
 " autocmd FileType ruby                    highlight SpellCap NONE
@@ -447,7 +451,7 @@ map <unique> <silent> <Leader>F <Plug>SimpleFold_Foldsearch
 
 " }}}"
 
-map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+map <Leader>rc :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
 
 " disable terrible sound effects
 set noerrorbells visualbell t_vb=
@@ -554,7 +558,7 @@ endfu
 
 command! -nargs=+ Term :call s:RunInTerm(<args>)
 
-map <leader>rc :Term "test", "cucumber -r features <C-R>%\n"<cr>
+"map <leader>rc :Term "test", "cucumber -r features <C-R>%\n"<cr>
 map <leader>rr :Term "test", "rspec --color <C-R>%:<C-R>=line('.')<cr>\n"<cr>
 map <leader>rR :Term "test", "rspec --color spec\n"<cr>
 
@@ -565,3 +569,9 @@ map <leader>rR :Term "test", "rspec --color spec\n"<cr>
 " convert ruby blocks
 let g:blockle_mapping = '<Leader>rb'
 
+fu! g:ToggleFocusOnRspec()
+  let curLine = line('.')
+  execute 'normal ?\v<it|context|describe|specify>.*\"\s*do'
+  execute 's/"\s*do/, :f => true do'
+  execute "normal "+curLine+"gg"
+endfu
