@@ -51,6 +51,8 @@ map <Leader><Leader> :ZoomWin<CR>
 
 " CTags
 map <Leader>tt :!ctags --extra=+f --exclude=build -R *<CR><CR>
+map <Leader>rc :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
 
 " Remember last location in file
 if has("autocmd")
@@ -450,8 +452,6 @@ autocmd FileType ruby setlocal foldcolumn=1
 map <unique> <silent> <Leader>F <Plug>SimpleFold_Foldsearch
 
 " }}}"
-
-map <Leader>rc :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
 
 " disable terrible sound effects
 set noerrorbells visualbell t_vb=
